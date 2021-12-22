@@ -33,4 +33,26 @@ public class SingleDimensionArray {
            System.out.println("Array no lonnger exists!");
        }
    }
+
+   public void SearchInArray(int valuetosearch){
+       for(int i=0;i<arr.length;i++){
+           if(arr[i]==valuetosearch){
+               System.out.println("Value is found at index"+ i);
+               return;
+           }
+       }
+      
+       System.out.println(valuetosearch + "is not found");
+   }
+
+   public void deleteValue(int indexToDelete){
+       try{
+           arr[indexToDelete]=Integer.MIN_VALUE;
+           System.out.println("the value has been deletred");
+       }catch(ArrayIndexOutOfBoundsException e){
+           System.out.println("the value provided is not in range");
+       }
+   }
+
+
 }

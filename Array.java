@@ -9,16 +9,17 @@ public class Array {
     }
 
     void reverse(int [] arrays){
-        for(int i=0;i<arrays.length/2;i++){
-            int other=arrays.length-i-1;
-            int temp=arrays[i];
-            arrays[i]=arrays[other];
-            arrays[other]=temp;
+        int n=arrays.length;
+        int para=0;
+        for(int i=0;i<n/2;i++){
+            para=arrays[n/2-i-1];
+            arrays[n/2-i-1]=arrays[i];
+            arrays[i]=para;
         }
         System.out.println(Arrays.toString(arrays));    
         
         }
         
     }
-    
+
 

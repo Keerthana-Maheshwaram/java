@@ -10,6 +10,12 @@ public class Arrmain {
 
         System.out.println("Array Traversal");
         sda.ArrayTraversal();
+
+        sda.SearchInArray(25);
+
+        sda.deleteValue(1);
+        System.out.println(sda.arr[0]);
+
     }
     
 }
