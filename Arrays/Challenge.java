@@ -38,10 +38,12 @@ public class Challenge {
     }
 
     public static int[] sortIntegers(int[] arr) {
-        int[] sortedArray = new int[arr.length];
-        for (int i = 0; i < arr.length; i++) {
-            sortedArray[i] = arr[i];
-        }
+        // int[] sortedArray = new int[arr.length];
+        // for (int i = 0; i < arr.length; i++) {
+        //     sortedArray[i] = arr[i];
+        // }
+        // instead of writing this big code to copy array to sorted array we can wrie it in 1 line as:
+        int[] sortedArray=Arrays.copyOf(arr,arr.length);
 
         boolean flag = true;
         int temp;
